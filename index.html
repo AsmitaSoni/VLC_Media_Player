@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLC_Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!--browser reset-->
+    <link rel="stylesheet" href="reset.css">
+    <!--new styling specific to this application-->
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <div class="titlebar">
+            <img src="./logo.png" alt="vlc logo"class="title_img">
+            <h3 class="title">VLC media player</h3>
+        </div>
+        <div class="menubar">
+            <div class="menu">
+                <div class="menu-btn" id="videoBtn">Open</div>
+                <input type="file" class="videoInput" id="videoInput">
+            </div>
+            <div class="menu">
+                <div class="menu-btn">Playback</div>
+                    <ul class="menu-item">
+                        <li id="SpeedUp">SpeedUp</li>
+                        <li id="SpeedDown">SpeedDown</li>
+                    </ul>
+            </div>
+            <div class="menu">
+                <div class="menu-btn">Audio</div>
+                <ul class="menu-item">
+                    <li id="VolumeUp">VolumeUp</li>
+                    <li id="VolumeDown">VolumeDown</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main id="main"></main>
+    <div class="toast">100%</div>
+    <footer>
+        <div id="controls">
+            <i class="fa-solid fa-play" id="playPause"></i>
+            <i class="fa-solid fa-backward" id="backward"></i>
+            <i class="fa-solid fa-square" id="square"></i>
+            <i class="fa-solid fa-forward" id="forward"></i>
+            <i class="fa-solid fa-expand" id="fullScreen"></i>
+        <input type="range" id="videoProgress" value="0" min="0" step="0.1" style="width: 1250px;">
+    </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

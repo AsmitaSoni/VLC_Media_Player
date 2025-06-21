@@ -1,0 +1,91 @@
+/*********header*********/
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(238, 238, 238);
+}
+header{
+    height:  5rem;
+    /* background-color: gray; */
+
+}
+.titlebar{
+    height: 50%;
+     /*outline: 2px solid blue; */
+    display:flex;
+    align-items: center;
+    gap: 0.2rem;
+
+}
+.title_img{
+    height:60%;
+    margin-left: 1rem;
+}
+title{
+    font-size: 1rem;
+}
+.menubar{
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+    align-items: center;
+    height: 50%;
+}
+.menu{
+    position: relative;
+}
+.menu:hover{
+    background-color: lightblue;
+}
+ .menu:hover .menu-item{ 
+     display: block; 
+ } 
+.menu-item{
+    background-color:rgb(238, 238, 238) ;
+    position: absolute;
+    top: 4px;
+    width: 120px; 
+    display: none;
+}
+li:hover{
+    background-color: gray;
+}
+/*.menu-btn:hover + .menu-item{
+    display: block;
+}*/
+li{
+    padding: 0.25rem;
+}
+.videoInput{
+    display: none;
+}
+/******main*****/
+main{
+    background-color: black;
+    height:calc(100vh - 8rem) ;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+} 
+.video{
+    max-height:100%;
+    max-width: 100%;
+    z-index:1 ;
+}
+
+/******footer******/
+footer{
+    height: 3rem;
+    /* background-color: gray; */
+}
+.toast{
+     color: white;
+     font-size: 2rem;
+     position: fixed;
+     top:99px;
+     right: 47px;
+     display: none;
+}
+#controls{
+    padding-left: 1rem;
+}
